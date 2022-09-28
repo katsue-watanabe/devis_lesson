@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   
-  devise_for :users
-
+  devise_for :users, controllers: {
+    sessions: "users/sessions",
+    registrations: "users/registrations"
+  }
   devise_scope :user do
     # get から root に帰る時は/を#に変える
     root "users/sessions#new"
