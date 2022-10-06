@@ -4,8 +4,8 @@ class Article < ApplicationRecord
   validates :title, presence: true, length: { maximum: 10 }
   validates :content, presence: true
 
-  # def user
-  #   User.find(self.user_id)
-  # end
+  def articles
+    Article.where(article_id: self.id)
+  end
 end
 
