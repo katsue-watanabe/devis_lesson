@@ -7,6 +7,7 @@ ruby '3.1.2'
 gem 'rails', '~> 6.1.7'
 gem 'rails-i18n', '~> 6.0'
 gem 'devise-i18n'
+gem 'carrierwave', '~> 2.0'
 
 gem 'bootstrap-sass'
 # Use sqlite3 as the database for Active Record
