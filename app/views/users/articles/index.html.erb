@@ -20,7 +20,7 @@
           <td><%= link_to "詳細", users_article_path(article), class: "btn btn-primary" %></td>
           <td><%= article.title %></td>
           <td><%= article.content %></td>
-          <td><img src="<%= "/article_images/#{article.image}" %>"></td>
+          <td><%= image_tag article.image.url, class: 'rounded-circle mr15', width: '40', height: '40' %></td>
           <td>
             <%= link_to "編集", edit_users_article_path(article), class: "btn btn-success" %>
             <%= link_to "削除",  users_article_path(article), method: :delete, data: { confirm: "削除してもよろしいですか？" }, class: "btn btn-danger" %>

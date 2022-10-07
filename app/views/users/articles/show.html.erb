@@ -18,7 +18,7 @@
         <tr>
           <td><%= @article.title %></td>
           <td><%= @article.content %></td>
-          <td><img src="<%= "/article_images/#{@article.image}" %>"></td>             
+          <td><%= image_tag @article.image.url, class: 'rounded-circle mr15', width: '40', height: '40' %></td>             
         </tr>        
       </tbody>
       
